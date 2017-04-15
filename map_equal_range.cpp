@@ -16,7 +16,7 @@ void main(){
   pair<map<int,char*>::iterator,map<int,char*>::iterator> pA;
   pA = mapA.equal_range(1);
   map<int,char*>::iterator theMap;
-  for(theMap = pA.first;theMap != pA.second;theMap++){
+  for(theMap = pA.first;theMap != pA.second;theMap++){// pair.first or second is diff with map::iterator->first
   	cout<<"theMap-->("<<theMap->first<<",\""<<theMap->second<<"\")"<<endl;
   }
   cout<<"pA.second-->"<<pA.second->first<<",\""<<pA.second->second<<"\")"<<endl;
